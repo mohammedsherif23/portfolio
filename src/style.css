@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #1B344A;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;  
+}
+
+nav {
+  display: flex;
+  background-color: #52C0EB;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+nav a {
+  margin-left: 20px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #ffff;
+  text-align: center;
+  font-family: Helvetical, sana-serif;
+  font-weight: bold;
+  display: flex;
+  position: relative;
+}
+nav a::after{
+  content: "";
+  border-bottom: 3px solid #ffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(5px);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  
+}
+nav a:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  font-weight: normal;
+  color: #ffff;
+}
+#welcome-section {
+  height: 100vh;
+}
+header h1{
+  font-size: 60px;
+  margin-bottom: 3px;
+}
+header p{
+  font-size: 25px;
+  margin: 0;
+}
+section {
+  text-align: center;
+  padding: 20px;
+}
+section h2 {
+  color: #ffff;
+  font-size: 30px;
+  margin: 0;
+}
+#contacts {
+  background-color: ;
+  display: ;
+  text-align: center;
+  margin: 40px;
+}
+.projects-container {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#projects {
+  background-color: #14568C;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.project {
+  background-color: #3479D4;
+  margin: 10px;
+  max-width: 300px;
+}
+.project img {
+  max-width: 100%;
+  border-radius: 20px;
+  height: 50vh;
+  margin-bottom: 0px;
+}
+.project-tile {
+  margin-bottom: 20px;
+}
+
+ul {
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  display: inline-flex;
+  padding:10px;
+  margin-left: 15px;
+  font-size: 25px;
+  list-style-type: none;
+}
+
+.ghost {
+   transition: transform 0.3s ease;
+}
+
+ a {
+  text-decoration: none;  
+  color: #ffff;
+  line-height:4rem;
+}
+
+li .ghost:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: ;
+  text-align: center;
+  margin: 40px;
+  padding: 20px;
+  font-size: 20px;
+  color: #ffff;
+  border-top:2px solid #52C0EB;
+  text-decoration: underline;
+}
+
+@media (max-width: 720px){
+  section {
+     padding: 10px;
+}
+  nav a {
+    text-align: center;
+  }
+}
